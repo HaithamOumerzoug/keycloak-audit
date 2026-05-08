@@ -1,7 +1,7 @@
 {
     "name": "keycloak-audit",
     "version": "0.1.0",
-    "description": "Enterprise-grade Keycloak integration auditor for full-stack applications.",
+    "description": "Enterprise-grade Keycloak integration auditor for full-stack applications, usable with Cursor, Claude, and other AI assistants.",
     "author": "OUMERZOUG Haitham",
     "entry": "SKILL.md",
     "tags": ["keycloak", "security", "oauth2", "oidc", "audit"],
