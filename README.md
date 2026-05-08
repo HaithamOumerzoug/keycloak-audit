@@ -24,6 +24,12 @@ Use this skill if you:
 - Want a fast security review before release
 - Need consistent audit output for CI, QA, or security checks
 
+## Install (agentskill.sh)
+
+Published on [agentskill.sh](https://agentskill.sh). From Agent chat:
+
+`/learn @haithamoumerzoug/keycloak-audit`
+
 ## How To Use
 
 From your project workspace, ask your assistant to run the skill:
