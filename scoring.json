@@ -1,0 +1,10 @@
+{
+    "start_score": 100,
+    "deductions": {
+      "CRITICAL": 25,
+      "HIGH": 15,
+      "MEDIUM": 8,
+      "LOW": 3
+    },
+    "minimum_score": 0
+  }

@@ -1,0 +1,58 @@
+[
+    {
+      "id": "KC001",
+      "category": "Token Storage",
+      "severity": "CRITICAL",
+      "detect_patterns": ["localStorage.setItem", "sessionStorage.setItem"],
+      "description": "Access token stored in browser storage.",
+      "recommendation": "Use in-memory storage or HttpOnly secure cookies (BFF pattern)."
+    },
+    {
+      "id": "KC002",
+      "category": "Authentication Flow",
+      "severity": "HIGH",
+      "detect_patterns": ["implicit", "responseType: 'token'"],
+      "description": "Implicit flow detected.",
+      "recommendation": "Use Authorization Code Flow with PKCE."
+    },
+    {
+      "id": "KC003",
+      "category": "Backend Validation",
+      "severity": "HIGH",
+      "detect_patterns": ["jwt.decode(", "atob("],
+      "description": "JWT decoded without signature verification.",
+      "recommendation": "Verify JWT signature using JWKS public key."
+    },
+    {
+      "id": "KC004",
+      "category": "Configuration",
+      "severity": "MEDIUM",
+      "detect_patterns": ["*"],
+      "description": "Wildcard redirect URI or CORS origin detected.",
+      "recommendation": "Restrict redirect URIs and Web Origins to exact domains."
+    },
+    {
+      "id": "KC005",
+      "category": "Backend Validation",
+      "severity": "HIGH",
+      "detect_patterns": ["issuer: false", "audience: false"],
+      "description": "Issuer or audience validation disabled.",
+      "recommendation": "Always validate issuer and audience in JWT validation."
+    },
+    {
+      "id": "KC006",
+      "category": "Authorization",
+      "severity": "MEDIUM",
+      "detect_patterns": ["req.body.role", "user.role ="],
+      "description": "Frontend-controlled role assignment detected.",
+      "recommendation": "Never trust roles from frontend. Extract roles from verified token."
+    },
+    {
+      "id": "KC007",
+      "category": "Configuration",
+      "severity": "LOW",
+      "detect_patterns": ["directAccessGrantsEnabled: true"],
+      "description": "Direct Access Grants enabled.",
+      "recommendation": "Disable unless explicitly required."
+    }
+  ]

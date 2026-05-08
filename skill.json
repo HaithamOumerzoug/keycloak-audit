@@ -1,0 +1,13 @@
+{
+    "name": "keycloak-audit",
+    "version": "0.1.0",
+    "description": "Enterprise-grade Keycloak integration auditor for full-stack applications.",
+    "author": "OUMERZOUG Haitham",
+    "entry": "SKILL.md",
+    "tags": ["keycloak", "security", "oauth2", "oidc", "audit"],
+    "capabilities": {
+      "read_files": true,
+      "search": true,
+      "reasoning": true
+    }
+  }
